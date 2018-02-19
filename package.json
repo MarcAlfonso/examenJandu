@@ -1,0 +1,19 @@
+{
+  "name": "jserverbot",
+  "version": "1.0.0",
+  "description": "repositorio para el examen",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcAlfonso/examenJandu.git"
+  },
+  "author": "Marc Alfonso Secanella",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarcAlfonso/examenJandu/issues"
+  },
+  "homepage": "https://github.com/MarcAlfonso/examenJandu#readme"
+}
