@@ -15,15 +15,23 @@ app.get('/removeduplicatewords', function(req, res){
 		res.send(hola);
 });
 
-app.get('/detectfiletype', function(req, res){
-		res.send("file type working");
-});
-http.get(url, res){
-    res.once('data', chunk => {
+/*app.get('/detectfiletype', function(req, res){
+	res.once('data', chunk => {
         res.destroy();
         console.log(fileType(chunk));
-        //=> {ext: 'gif', mime: 'image/gif'}
-    });
+        resultado = "{ext: 'gif', mime: 'image/gif'}";
+		JSON.stringify(resultado);
+    });		
+});*/
 
+//app.get('/example/b', function (req, res, next)
+app.get('/detectfiletype', function (req, res){
+		res.once('data', url => {
+        res.destroy();
+        console.log(fileType(url));
+        resultado = "{ext: 'gif', mime: 'image/gif'}";
+		JSON.stringify(resultado);
+    });
+});
 
 app.listen(8000);
